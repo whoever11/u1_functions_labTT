@@ -1,219 +1,78 @@
-<img src="https://i.imgur.com/sA6iEbw.jpg">
+![](https://i.imgur.com/hGEeDR1.png)
 
-# JavaScript Arrays Lab
+# JavaScript Functions Lab
 
 ## Introduction
 
-This lab provides an opportunity to practice defining, accessing and manipulating arrays.
+This lab provides an opportunity to practice defining and coding some real-world functions.
 
-> **Note:** Feel free to reference the arrays lesson, collaborate, google, etc.
-
-## Setup & Instructions
-
-Create a new Node.js-based repl on [replit.com](https://replit.com) for these exercises.
-
-Title your repl **JS Array Lab**.
-
-Copy the exercises below into the repl's **index.js** file and code away!
-
-This lab is **a DELIVERABLE** - be sure to submit the link to your repl in Google Classroom prior to the due date.
+> **Note:** Feel free to work in pairs to complete this lab. Also, Google/StackOverflow is a good friend to have around...
 
 ## Exercise
 
+#### Setup & Instructions
+
+Create a new HTML/CSS/JS repl in [repl.it](https://repl.it) for these exercises.
+
+Title your repl **JS Function Lab**.
+
+This lab is **not a deliverable**.
+
+#### Requirements
+
+Define and code the functions below.
+
+Define the functions using the approach as specified (either as a function expression or declaration).
+
+Be sure to number each function with a comment above it.
+
+After each function, call it **at least once** and `console.log` the results.
+
+For example, here's the first function, our gift to you:
+
 ```js
-/*
-Exercise 1:
-  - Define an empty array named foods
-*/
-
-// Exercise 1 has been completed for you...
-
-const foods = [];
-
-console.log('Exercise 1 Result:\n', foods);
-
-/*
-Exercise 2:
-  - Add the strings 'pizza' & 'cheeseburger' to the foods array such that 'pizza' comes before 'cheeseburger'.
-*/
-
-// Complete Exercise 2 below...
-
-
-
-console.log('Exercise 2 Result:\n',  foods);
-
-/*
-Exercise 3:
-  - Add the string 'taco' to the foods array so that 'taco' is the first food in the array.
-*/
-
-// Complete Exercise 3 below...
-
-
-
-console.log('Exercise 3 Result:\n', foods);
-
-/*
-Exercise 4:
-  - Access the string 'pizza' (based upon its known position) in the foods array and assign to a variable named favFood.
-*/
-
-// Complete Exercise 4 below...
-
-
-
-console.log('Exercise 4 Result:\n', favFood);
-
-/*
-Exercise 5:
-  - Insert the string 'tofu' in the foods array between 'pizza' & 'cheeseburger'
-*/
-
-// Complete Exercise 5 below...
-
-
-
-console.log('Exercise 5 Result:\n', foods);
-
-/*
-Exercise 6:
-  - Replace the string 'pizza' in the foods array with the strings 'sushi' & 'cupcake'.
-*/
-
-// Complete Exercise 6 below...
-
-
-
-console.log('Exercise 6 Result:\n', foods);
-
-/*
-Exercise 7:
-  - Use the slice method on the foods array to create a new array containing 'sushi' & 'cupcake'.
-  - Assign the new array to a variable named yummy.
-*/
-
-// Complete Exercise 7 below...
-
-
-
-console.log('Exercise 7 Result:\n', yummy);
-
-/*
-Exercise 8:
-  - Using the indexOf method on the foods array, assign the index of the 'tofu' string to a variable named soyIdx.
-*/
-
-// Complete Exercise 8 below...
-
-
-
-console.log('Exercise 8 Result:\n', soyIdx);
-
-/*
-Exercise 9:
-  - Assign to a variable named allFoods the result of joining the strings in the foods array such that the result is the following single string:
-    'taco -> sushi -> cupcake -> tofu -> cheeseburger'
-*/
-
-// Complete Exercise 9 below...
-
-
-
-console.log('Exercise 9 Result:\n', allFoods);
-
-/*
-Exercise 10:
-  - Assign a boolean to a variable named hasSoup depending upon whether or not the foods array includes the string 'soup'.
-*/
-
-// Complete Exercise 10 below...
-
-
-
-console.log('Exercise 10 Result:\n', hasSoup);
-
-/*
-Exercise 11:
-  - Use the forEach method to iterate through the provided nums array and add each odd number to a new array named odds.
-  - Hint: Initialize the odds variable to an empty array before the iteration.
-*/
-
-const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
-
-// Complete Exercise 11 below...
-
-
-
-console.log('Exercise 11 Result:\n', odds);
-
-/*
-Exercise 12:
-  - Use the forEach method to iterate through the same nums array and add the number to **one** of the following arrays: fizz, buzz or fizzbuzz - based upon the following:
-  	- Add to the fizzbuzz array if the number is evenly divisible by 3 & 5.
-  	- Add to the fizz array if the number is evenly divisible by 3.
-  	- Add to the buzz array if the number is evenly divisible by 5.
-*/
-
-// Complete Exercise 12 below...
-
-
-
-console.log('Exercise 12 Results:');
-console.log('  fizz:', fizz);
-console.log('  buzz:', buzz);
-console.log('  fizzbuzz:', fizzbuzz);
-
-/*
-Exercise 13:
-  - Given the below numArrays array of arrays (two-dimensional array), assign the last nested array to a variable named numList.
-  - Assume you don't know how many nested arrays numArrays contains.
-*/
-
-const numArrays = [
-	[100, 5, 23],
-	[15, 21, 72, 9],
-	[45, 66],
-	[7, 81, 90]
-];
-
-// Complete Exercise 13 below...
-
-
-
-console.log('Exercise 13 Result:\n', numList);
-
-/*
-Exercise 14:
-  - Given the above numArrays array, access the number 66 and assign to a variable named num.
-*/
-
-// Complete Exercise 14 below...
-
-
-
-console.log('Exercise 14 Result:\n', num);
-
-/*
-Exercise 15:
-  - Given the above numArrays array, use nested forEach methods to sum up all the numbers contained within numArrays and assign to a variable named total.
-  - Hint: Be sure to declare and initialize the total variable before the iterations.
-*/
-
-// Complete Exercise 15 below...
-
-
-
-console.log('Exercise 15 Result:\n', total);
+// 1.
+function maxOfTwoNumbers(x, y) {
+  if (x >= y) {
+    return x;
+  } else {
+    return y;
+  }
+  
+  // or more "elegantly" using the fantastic ternary expression!
+  // return  x >= y ? x : y;
+}
+
+console.log(maxOfTwoNumbers(3, 9));
+
+// 2.
+...
 ```
 
-## Solution
+Here are the functions:
 
-Try not to peek!
+1. (_completed above_) Define a function, as a function declaration, `maxOfTwoNumbers` that takes two numbers as arguments and returns the largest of them. If they are the same, return that number. Use the if-else construct or a [ternary expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator) -  the Math.max method is not allowed.
 
-[Solution Repl](https://replit.com/@jim_clark/JS-Arrays-Lab#script.js) 
+2. Define a function, as a function expression, `maxOfThree` that takes three numbers as arguments and returns the largest of them. Again, the Math.max method is not allowed.
+
+3. Define a function, as a function declaration, `isCharAVowel` that takes a character as an argument and returns true if it is a vowel, false otherwise.
+
+4. Define a function, as a function expression, `sumArray` that takes an array of numbers and returns the sum of those numbers. For example, `sumArray([2, 4, 5]);` would return `11`.
+
+5. Define a function, as a function declaration, `multiplyArray` that takes an array of numbers and returns the product those numbers. For example, `multiplyArray([2, 4, 5]);` would return `40`.
+
+6. Define a function, as a function expression, `numArgs` that returns the number of arguments passed to the function when called.
+
+7. Define a function, as a function declaration, `reverseString` that takes a string, reverses the characters, and returns it. For example, `reverseString('rockstar');` would return the string "ratskcor".
+
+8. Define a function, as a function expression, `longestStringInArray` that takes an array of strings as an argument and returns the length of the longest string.
+
+9. Define a function, as a function declaration, `stringsLongerThan` that takes an array of strings and a number as arguments; and returns an array of the strings that are longer than the number passed in. For example, `stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3);` would return `["hello", "morning"]`.
+
+### Solution Code
+
+[Try not to peek!](https://replit.com/@jim_clark/JS-Functions-Lab#script.js)
 
 ## Additional Resources
 
-- [MDN Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
-
+- [MDN Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
