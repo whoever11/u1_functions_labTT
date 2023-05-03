@@ -1,78 +1,95 @@
-![](https://i.imgur.com/hGEeDR1.png)
+### Functions Exercise:
 
-# JavaScript Functions Lab
+1.  Write a function called logIn that takes your name as a parameter and console.logs 'Hello /your name/!' when it is called
 
-## Introduction
+2.  Take that function up a notch by creating a new variable called isLoggedIn, that logs 'Hello /your name/!' when the variable is true, or "please log in" when it is false
 
-This lab provides an opportunity to practice defining and coding some real-world functions.
+3. We are looking to re-sod our lawn. It has a length of 20' and a width of 30', with Sod costing $1.45/sqft. Additionally, it will cost $100 to have thew work done.  Write a function that finds the area of the lawn, the price of the Sod, and what the total cost will be to get the lawn redone
 
-> **Note:** Feel free to work in pairs to complete this lab. Also, Google/StackOverflow is a good friend to have around...
-
-## Exercise
-
-#### Setup & Instructions
-
-Create a new HTML/CSS/JS repl in [repl.it](https://repl.it) for these exercises.
-
-Title your repl **JS Function Lab**.
-
-This lab is **not a deliverable**.
-
-#### Requirements
-
-Define and code the functions below.
-
-Define the functions using the approach as specified (either as a function expression or declaration).
-
-Be sure to number each function with a comment above it.
-
-After each function, call it **at least once** and `console.log` the results.
-
-For example, here's the first function, our gift to you:
+4.  Write a function that loops over the following array of SEI students and prints out their name, and how many letters their name is
 
 ```js
-// 1.
-function maxOfTwoNumbers(x, y) {
-  if (x >= y) {
-    return x;
-  } else {
-    return y;
-  }
-  
-  // or more "elegantly" using the fantastic ternary expression!
-  // return  x >= y ? x : y;
-}
-
-console.log(maxOfTwoNumbers(3, 9));
-
-// 2.
-...
+const students = [
+  'Alice',
+  'Andrew',
+  'Casey',
+  'Damian',
+  'Grant',
+  'Howie',
+  'Wade',
+  'Kat',
+  'Kimbrad',
+  'Kiu',
+  'Natasha',
+  'Obi',
+  'Pedro',
+  'Sarah',
+  'Scott',
+  'Tiffany',
+  'Zhe'
+]
 ```
 
-Here are the functions:
+It should give us "Alice is 5 letters long"... and so on
 
-1. (_completed above_) Define a function, as a function declaration, `maxOfTwoNumbers` that takes two numbers as arguments and returns the largest of them. If they are the same, return that number. Use the if-else construct or a [ternary expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator) -  the Math.max method is not allowed.
 
-2. Define a function, as a function expression, `maxOfThree` that takes three numbers as arguments and returns the largest of them. Again, the Math.max method is not allowed.
+5. FizzBuzz
+1. Write a javascript application that logs all numbers from 1 - 100.
+2. If a number is divisible by 3 log "Fizz" instead of the number.
+3. If a number is divisible by 5 log "Buzz" instead of the number.
+4. If a number is divisible by 3 and 5 log "FizzBuzz" instead of the number.
 
-3. Define a function, as a function declaration, `isCharAVowel` that takes a character as an argument and returns true if it is a vowel, false otherwise.
 
-4. Define a function, as a function expression, `sumArray` that takes an array of numbers and returns the sum of those numbers. For example, `sumArray([2, 4, 5]);` would return `11`.
+6. Checkerboard
 
-5. Define a function, as a function declaration, `multiplyArray` that takes an array of numbers and returns the product those numbers. For example, `multiplyArray([2, 4, 5]);` would return `40`.
+Set a checkerboard size to a variable
 
-6. Define a function, as a function expression, `numArgs` that returns the number of arguments passed to the function when called.
+```js
+const boardSize = 8;
+```
 
-7. Define a function, as a function declaration, `reverseString` that takes a string, reverses the characters, and returns it. For example, `reverseString('rockstar');` would return the string "ratskcor".
+Now, using what you know about control flow, build a checkerboard
 
-8. Define a function, as a function expression, `longestStringInArray` that takes an array of strings as an argument and returns the length of the longest string.
+```
+ # # # #
+# # # # 
+ # # # #
+# # # # 
+ # # # #
+# # # # 
+ # # # #
+# # # # 
+```
 
-9. Define a function, as a function declaration, `stringsLongerThan` that takes an array of strings and a number as arguments; and returns an array of the strings that are longer than the number passed in. For example, `stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3);` would return `["hello", "morning"]`.
+You should be able to change the variable `boardSize` and generate a larger or smaller grid
 
-### Solution Code
+```js
+const boardSize = 20;
+```
 
-[Try not to peek!](https://replit.com/@jim_clark/JS-Functions-Lab#script.js)
+Should now generate:
 
-## Additional Resources
+```
+ # # # # # # # # # #
+# # # # # # # # # # 
+ # # # # # # # # # #
+# # # # # # # # # # 
+ # # # # # # # # # #
+# # # # # # # # # # 
+ # # # # # # # # # #
+# # # # # # # # # # 
+ # # # # # # # # # #
+# # # # # # # # # # 
+ # # # # # # # # # #
+# # # # # # # # # # 
+ # # # # # # # # # #
+# # # # # # # # # # 
+ # # # # # # # # # #
+# # # # # # # # # # 
+ # # # # # # # # # #
+# # # # # # # # # # 
+ # # # # # # # # # #
+# # # # # # # # # # 
 
-- [MDN Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
+```
+
