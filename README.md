@@ -36,10 +36,10 @@ It should give us "Alice is 5 letters long"... and so on
 
 
 5. FizzBuzz
-1. Write a javascript application that logs all numbers from 1 - 100.
-2. If a number is divisible by 3 log "Fizz" instead of the number.
-3. If a number is divisible by 5 log "Buzz" instead of the number.
-4. If a number is divisible by 3 and 5 log "FizzBuzz" instead of the number.
+ - Write a javascript function that logs all numbers from 1 - 100.
+-  If a number is divisible by 3 log "Fizz" instead of the number.
+-  If a number is divisible by 5 log "Buzz" instead of the number.
+-  If a number is divisible by 3 and 5 log "FizzBuzz" instead of the number.
 
 
 6. Checkerboard
