@@ -45,6 +45,8 @@ If you want to take it a bit further, add an additional condtional in that wll o
 Then, to take it one step further, set *another* conditional that makes it so only names that are 5 or more letters long *and start with a vowel* are logged. 
 
 
+## Bonus
+
 5. FizzBuzz
  - Write a javascript function that logs all numbers from 1 - 100.
 -  If a number is divisible by 3 log "Fizz" and of the number.
