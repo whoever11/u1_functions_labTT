@@ -23,26 +23,26 @@
 
 // Number 3 = Lawn Cost
 
-//  const length = 20
-//  const width = 30
-//  const sodPrice = 1.45
-//  const laborCost = 100
-//  const budget = 700
+//   const length = 20
+//   const width = 30
+//   const sodPrice = 1.45
+//   const laborCost = 100
+//   const budget = 700
 
-//  function calculateLawnCost(length, width, sodPrice, laborCost, budget) {
-//      const area = length * width;
-//      const totalCost = area * sodPrice + laborCost
+//   function calculateLawnCost(length, width, sodPrice, laborCost, budget) {
+//       const area = length * width;
+//       const totalCost = area * sodPrice + laborCost
    
-//      if (totalCost <= budget) {        
-//      console.log(`The total cost to redo the lawn is $${totalCost}`)
-//         console.log("You have enough budget.");
-//         console.log(`You will have $${budget - totalCost}`)
-//      } else {
-//         console.log(`The total cost to redo the lawn is $${totalCost}`)
-//         console.log("You don't have enough budget.")
-//         console.log(`You will need an additional $${totalCost - budget} to complete the job.`)
-//     }
-//  }
+//       if (totalCost <= budget) {        
+//       console.log(`The total cost to redo the lawn is $ ${totalCost}`)
+//          console.log("You have enough budget.");
+//          console.log(`You will have $ ${budget - totalCost}`)
+//       } else {
+//          console.log(`The total cost to redo the lawn is $ ${totalCost}`)
+//          console.log("You don't have enough budget.")
+//          console.log(`You will need an additional $ ${totalCost - budget} to complete the job.`)
+//      }
+//   }
 // calculateLawnCost(length, width, sodPrice, laborCost, budget)
 // const width = 20;
 // const length = 30;
@@ -64,15 +64,17 @@
 
 // Number 4
 
-const students = [ 'Alice', 'Andy', 'Andrew', 'Casey','Damian','Emily','Emilie','Grant','Howie', 'Isabella','Kat','Kimbrad','Kiu', 'Natasha', 'Obi','Oscar','Pedro', 'Sarah','Scott', 'Tiffany','Umberto','Wade','Zhe'
- ]
-// function printNameAndLength(students) {
-//     for (let i = 0; i < students.length; i++) {
-//         const name = students[i]
-//         const length = name.length
-//         console.log(`${name} is ${length} letters long`)
-//     }
-// }
+// const students = [ 'Alice', 'Andy', 'Andrew', 'Casey','Damian','Emily','Emilie','Grant','Howie', 'Isabella','Kat','Kimbrad','Kiu', 'Natasha', 'Obi','Oscar','Pedro', 'Sarah','Scott', 'Tiffany','Umberto','Wade','Zhe'
+//  ]
+//  function printNameAndLength(students) {
+//      for (let i = 0; i < students.length; i++) {
+//          const name = students[i]
+//          const length = name.length
+//          console.log(`${name} is ${length} letters long`)
+//          return name + length <= 5
+//      }
+//  }
+//     printNameAndLength(students)
 // printNameAndLength(students)
 
 //shorter
@@ -81,8 +83,8 @@ const students = [ 'Alice', 'Andy', 'Andrew', 'Casey','Damian','Emily','Emilie',
 
 // Number 5
 //1
-const nums = [1, 3, 6, 9, 11, 15, 21, 25, 28, 30, 32, 34, 36, 40, 44, 45]
-const Multiply = (nums) => { 
-    return nums.map(num => num * 2)
-}
-console.log(Multiply(nums))
+// const nums = [1, 3, 6, 9, 11, 15, 21, 25, 28, 30, 32, 34, 36, 40, 44, 45]
+// const Multiply = (nums) => { 
+//     return nums.map(num => num * 2)
+// }
+// console.log(Multiply(nums))
