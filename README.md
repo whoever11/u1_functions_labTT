@@ -48,44 +48,45 @@ Then, to take it one step further, set *another* conditional that makes it so on
 
 const nums = [1, 3, 6, 9, 11, 15, 21, 25, 28, 30, 32, 34, 36, 40, 44, 45]
 
-const getSquares = (nums) => {
+1) const getSquares = (nums) => {
   /**
    * Use .map to return an array of all nums multiplied by 2
    */
 }
 
-const isDivBy3 = (nums) => {
+2) const isDivBy3 = (nums) => {
   /**
    * Use .map to return an array of booleans, if the number is divisible by 3 return true otherwise false
    * * The modulus % operator may be useful *
    */
 }
 
-const filterOdds = (nums) => {
+3) const filterOdds = (nums) => {
   /**
    * Use .filter to return an array of all odd numbers
    * * The modulus % operator may be useful *
    */
 }
 
-const filterEvens = (nums) => {
+4) const filterEvens = (nums) => {
   /**
    * Use .filter to return all even numbers
    * * The modulus % operator may be useful *
    */
 }
-const filterDivBy4 = (nums) => {
+5) const filterDivBy4 = (nums) => {
   /**
    * Use .filter to return all numbers that are divisible by 4
    * * The modulus % operator may be useful *
    */
 }
-const addAllUp = (nums) => {
+6) const addAllUp = (nums) => {
   /**
    * Use .reduce to return the total sum of all numbers
    */
 }
-const multiplyAllNums = (nums) => {
+
+7) const multiplyAllNums = (nums) => {
   /**
    * Use .reduce to return the total product of all numbers
    */
