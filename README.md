@@ -44,65 +44,69 @@ If you want to take it a bit further, add an additional condtional in that wll o
 Then, to take it one step further, set *another* conditional that makes it so only names that are 5 or more letters long *and start with a vowel* are logged. 
 
 
-## Bonus
+## Higher Order Functions
 
-5. FizzBuzz
- - Write a javascript function that logs all numbers from 1 - 100.
--  If a number is divisible by 3 log "Fizz" and of the number.
--  If a number is divisible by 5 log "Buzz" and of the number.
--  If a number is divisible by both 3 and 5 log "FizzBuzz" and of the number.
+const nums = [1, 3, 6, 9, 11, 15, 21, 25, 28, 30, 32, 34, 36, 40, 44, 45]
 
+const getSquares = (nums) => {
+  /**
+   * Use .map to return an array of all nums multiplied by 2
+   */
+}
 
-6. Checkerboard
+const isDivBy3 = (nums) => {
+  /**
+   * Use .map to return an array of booleans, if the number is divisible by 3 return true otherwise false
+   * * The modulus % operator may be useful *
+   */
+}
 
-Set a checkerboard size to a variable
+const filterOdds = (nums) => {
+  /**
+   * Use .filter to return an array of all odd numbers
+   * * The modulus % operator may be useful *
+   */
+}
 
-```js
-const boardSize = 8;
-```
+const filterEvens = (nums) => {
+  /**
+   * Use .filter to return all even numbers
+   * * The modulus % operator may be useful *
+   */
+}
+const filterDivBy4 = (nums) => {
+  /**
+   * Use .filter to return all numbers that are divisible by 4
+   * * The modulus % operator may be useful *
+   */
+}
+const addAllUp = (nums) => {
+  /**
+   * Use .reduce to return the total sum of all numbers
+   */
+}
+const multiplyAllNums = (nums) => {
+  /**
+   * Use .reduce to return the total product of all numbers
+   */
+}
 
-Now, using what you know about control flow, build a checkerboard
-
-```
- # # # #
-# # # # 
- # # # #
-# # # # 
- # # # #
-# # # # 
- # # # #
-# # # # 
-```
-
-You should be able to change the variable `boardSize` and generate a larger or smaller grid
-
-```js
-const boardSize = 20;
-```
-
-Should now generate:
-
-```
- # # # # # # # # # #
-# # # # # # # # # # 
- # # # # # # # # # #
-# # # # # # # # # # 
- # # # # # # # # # #
-# # # # # # # # # # 
- # # # # # # # # # #
-# # # # # # # # # # 
- # # # # # # # # # #
-# # # # # # # # # # 
- # # # # # # # # # #
-# # # # # # # # # # 
- # # # # # # # # # #
-# # # # # # # # # # 
- # # # # # # # # # #
-# # # # # # # # # # 
- # # # # # # # # # #
-# # # # # # # # # # 
- # # # # # # # # # #
-# # # # # # # # # # 
-
-```
-
+// BONUS
+const sumSquareAllNums = (nums) => {
+  /**
+   * Use .reduce to return the total sum of each number to the second power
+   * @param {[Number]} arr will contain numbers from 1-15
+   * Your final result should be 1240
+   */
+}
+const addAllAges = (nums) => {
+  /**
+   * Use .reduce to return the total sum of all ages in the provided arr
+   * The arr parameter contains:
+      { name: 'Carl', age: 30 },
+      { name: 'Cara', age: 10 },
+      { name: 'Carmen', age: 15 }
+    ]
+    Your final result should be 55
+   */
+}
