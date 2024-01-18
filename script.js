@@ -65,16 +65,24 @@
 // Number 4
 
 const students = [ 'Alice', 'Andy', 'Andrew', 'Casey','Damian','Emily','Emilie','Grant','Howie', 'Isabella','Kat','Kimbrad','Kiu', 'Natasha', 'Obi','Oscar','Pedro', 'Sarah','Scott', 'Tiffany','Umberto','Wade','Zhe'
-]
-function printNameAndLength(students) {
-    for (let i = 0; i < students.length; i++) {
-        const name = students[i]
-        const length = name.length
-        console.log(`${name} is ${length} letters long`)
-    }
-}
-printNameAndLength(students)
+ ]
+// function printNameAndLength(students) {
+//     for (let i = 0; i < students.length; i++) {
+//         const name = students[i]
+//         const length = name.length
+//         console.log(`${name} is ${length} letters long`)
+//     }
+// }
+// printNameAndLength(students)
 
+//shorter
+// students.map((word) => console.log (`${word} is ${word.length} letters long`))
 // end of Number 4
 
 // Number 5
+//1
+const nums = [1, 3, 6, 9, 11, 15, 21, 25, 28, 30, 32, 34, 36, 40, 44, 45]
+const Multiply = (nums) => { 
+    return nums.map(num => num * 2)
+}
+console.log(Multiply(nums))
